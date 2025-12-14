@@ -1,0 +1,12 @@
+name: Deploy Mindful Oracle Ω
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Streamlit
+        run: |
+          pip install streamlit
+          streamlit config set --global.disableWatchdogWarning true
+          echo "Deployed at $(date)" > deploy.log

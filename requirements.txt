@@ -1,0 +1,11 @@
+torch>=2.4.0
+transformers>=4.45
+streamlit>=1.38
+vllm>=0.6
+tenseal>=0.3
+pqcrypto>=0.1
+pandas
+numpy
+openai
+anthropic
+flower
